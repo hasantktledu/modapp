@@ -72,7 +72,8 @@ function calmaListesiGoster(calmaListesi) {
         calmaListesiElemani.append(calinanModElemani); // Çalma listesi elemanına p elemanı ekleniyor.
     });
 
-    const toplamModElemani = document.createElement("p"); 
-    toplamModElemani.textContent = calmaListesi.length; 
+    const toplamModElemani = document.createElement("p");
+    toplamModElemani.className = "mod-sayisi";
+    toplamModElemani.textContent = calmaListesi.length + " mod çalıyor."; 
     calmaListesiElemani.append(toplamModElemani);
 }
